@@ -1,0 +1,43 @@
+--- Phase 1: Training on Data ---
+Epoch 0 | Data Loss: 0.945234
+Epoch 200 | Data Loss: 0.042070
+Epoch 400 | Data Loss: 0.015618
+Epoch 600 | Data Loss: 0.009601
+Epoch 800 | Data Loss: 0.006924
+--- Phase 2: Adding Physics ---
+Epoch 0 | Total Loss: 0.005705 | Phys Loss: 2.818335
+Epoch 200 | Total Loss: 0.004797 | Phys Loss: 2.821861
+Epoch 400 | Total Loss: 0.004177 | Phys Loss: 2.824737
+Epoch 600 | Total Loss: 0.004037 | Phys Loss: 2.811455
+Epoch 800 | Total Loss: 0.003438 | Phys Loss: 2.831005
+
+
+--- PINN Final Metrics: NACA 0024 ---
+Coefficient  | R2 Score   | MAE       
+--------------------------------------
+CL           |    -2.2135 |     1.3819
+CD           |    -0.3568 |     0.0334
+Cm           |  -135.0780 |     0.2212
+
+--- PINN Final Metrics: NACA 6412 ---
+Coefficient  | R2 Score   | MAE       
+--------------------------------------
+CL           |     0.3194 |     0.5601
+CD           |     0.4536 |     0.0188
+Cm           |   -12.6683 |     0.1321
+
+
+
+--- PINN Final Tuned Metrics: NACA 0024 ---
+Coefficient  | R2 Score   | MAE       
+--------------------------------------
+CL           |    -1.9379 |     1.3177
+CD           |    -0.7433 |     0.0383
+Cm           |  -127.6154 |     0.2132
+
+--- PINN Final Tuned Metrics: NACA 6412 ---
+Coefficient  | R2 Score   | MAE       
+--------------------------------------
+CL           |     0.1837 |     0.6264
+CD           |     0.5173 |     0.0176
+Cm           |   -13.2898 |     0.1377
